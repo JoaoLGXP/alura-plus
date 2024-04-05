@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --alura-plus-primary-color: #00030C;
+    --alura-plus-secondary-color: #FFF;
+    --alura-plus-tertiary-color: #167BF7;
+    --alura-plus-quaternary-color: #F9F9F9;
+    --alura-plus-quinary-color: #C0C0C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--alura-plus-primary-color);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.alura-plus-principal {
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.alura-plus-principal h1 {
+    font-size: 1.75rem;
+    color: var(--alura-plus-secondary-color);
+    letter-spacing: 1px;
+}
+
+.alura-plus-principal img {
+    width: 55%;
+}
+
+.alura-plus-itens-esquerda {
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.alura-plus-itens-titulo-e-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 54px;
+}
+
+.alura-plus-itens-botoes {
+    color: var(--alura-plus-secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.alura-plus-item-botao-azul {
+    background-color: var(--alura-plus-tertiary-color);
+    color: var(--alura-plus-secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 95%;
+    font-size: 1rem;
+}
+
+.alura-plus-item-botao-azul:hover {
+    border: 1px solid var(--alura-plus-secondary-color);
+    color: var(--alura-plus-quinary-color);
+}
+
+.alura-plus-item-botao-transparente {
+    background-color: transparent;
+    border: 1px solid var(--alura-plus-secondary-color);
+    color: var(--alura-plus-secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 95%;
+    font-size: 1rem;
+}
+
+.alura-plus-item-botao-transparente:hover {
+    border: 1px solid var(--alura-plus-tertiary-color);
+    color: var(--alura-plus-quinary-color);
+}
+
+.alura-plus-aviso-complementar {
+    color: var(--alura-plus-quinary-color);
+    font-size: 0.75rem;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+/*-------------------------------------------------------------------------------------------
+CSS da segunda sessão*/
+
+.alura-plus-secundario {
+    align-items: center;
+    padding: 0% 10%;
+}
+
+.alura-plus-secundario img {
+    width: 90%;
+    padding: 2rem;
+}
+
+.alura-plus-descricao h2 {
+    color: var(--alura-plus-secondary-color);
+    font-size: 3rem;
+    line-height: 150%;
+}
+
+.alura-plus-descricao p {
+    color: var(--alura-plus-quinary-color);
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.alura-plus-botao-menor {
+    width: 30%;
+}
+
+.mt16 {
+    margin-top: 1rem;
+}
+
+/*-------------------------------------------------------------------------------------------
+CSS da Sessão dos Dispositivos*/
+
+.alura-plus-sessao-dispositivos {
+    color: var(--alura-plus-secondary-color);
+    padding: 0% 10% 5% 10%;
+    text-align: center;
+}
+
+.alura-plus-sessao-dispositivos h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.alura-plus-sessao-dispositivos-icones-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alura-plus-sessao-dispositivos-icones-container {
+    font-size: 2rem;
+}
+
+/*-------------------------------------------------------------------------------------------
+CSS do Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alura-plus-footer-links-e-informacoes {
+    margin-top: 40px;
+    padding: 0% 10%;
+}
+
+.alura-plus-footer-links {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.alura-plus-footer-links a {
+    color: var(--alura-plus-secondary-color);
+    font-size: 1rem;
+}
+
+.alura-plus-footer-links a:hover {
+    color: var(--alura-plus-tertiary-color);
+}
+
+.alura-plus-footer-informacoes {
+    color: var(--alura-plus-quinary-color);
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
